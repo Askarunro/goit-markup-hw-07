@@ -297,19 +297,7 @@ ul {
   padding-bottom: 94px;
 }
 
-.section-work .title-section {
-  margin-bottom: 50px;
-}
-
-.img-box {
-  position: relative;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.title-section {
+.container__title{
   margin-bottom: 50px;
 
   text-align: center;
@@ -318,7 +306,15 @@ ul {
   color: var(--primary-text-color);
 }
 
-.label-img {
+.block-work {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block-work__label {
   position: absolute;
   bottom: 0px;
 
@@ -345,11 +341,11 @@ ul {
   background-color: #f5f4fa;
 }
 
-.items-team {
+.list-team  {
   display: flex;
 }
 
-.item-card {
+.list-team__card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -359,15 +355,15 @@ ul {
   background-color: var(--primary-color-white);
 }
 
-.item-card:not(:first-child) {
+.list-team__card:not(:first-child) {
   margin-left: 30px;
 }
 
-.card-wrapper {
+.member-card {
   padding: 30px 0;
 }
 
-.title-card {
+.member-card__title{
   margin-bottom: 10px;
 
   font-size: 16px;
@@ -376,14 +372,18 @@ ul {
   color: var(--primary-text-color);
 }
 
-.box-social {
+.member-card__box {
   display: flex;
 
   margin-top: 16px;
   padding: 0 32px;
 }
 
-.link-social {
+.lists-networks{
+  display: flex;
+}
+
+.lists-networks__link {
   display: inline-flex;
   width: 44px;
   height: 44px;
@@ -394,19 +394,19 @@ ul {
   transition: background-color 250ms var(--timing-function);
 }
 
-.icon-social {
+.lists-networks__icon {
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
 }
 
-.link-social:hover,
-.link-social:focus {
+.lists-networks__link:hover,
+.lists-networks__link:focus {
   background-color: var(--accent-color);
   cursor: pointer;
 }
 
-.link-social:hover .icon-social,
-.link-social:focus .icon-social {
+.lists-networks__link:hover .lists-networks__icon,
+.lists-networks__link:focus .lists-networks__icon {
   fill: #ffffff;
 }
 
@@ -416,12 +416,12 @@ ul {
   padding: 94px 0;
 }
 
-.items-company {
+.list-company {
   display: flex;
   justify-content: space-between;
 }
 
-.link-company {
+.list-company__link {
   display: flex;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -434,19 +434,19 @@ ul {
   transition: border-color 250ms var(--timing-function);
 }
 
-.icon-company {
+.list-company__icon {
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
 }
 
-.link-company:hover,
-.link-company:focus {
+.list-company__link:hover,
+.list-company__link:focus {
   border-color: var(--accent-color);
   outline: var(--accent-color);
 }
 
-.link-company:hover .icon-company,
-.link-company:focus .icon-company {
+.list-company__link:hover .list-company__icon,
+.list-company__link:focus .list-company__icon {
   fill: var(--accent-color);
 }
 
@@ -454,6 +454,11 @@ ul {
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
 }
 
 .box-logo-address {
@@ -487,10 +492,7 @@ ul {
   color: var(--color-contacts);
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
+
 
 .box-join {
   margin-left: 70px;
@@ -509,21 +511,21 @@ ul {
   display: flex;
 }
 
-.item-join:not(:last-child) {
+.lists-networks__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.link-social.dark {
+.lists-networks__link.dark {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--timing-function);
 }
 
-.link-social.dark:hover,
-.link-social.dark:focus {
+.lists-networks__link.dark:hover,
+.lists-networks__link.dark:focus {
   background-color: var(--accent-color);
 }
 
-.icon-social.light {
+.lists-networks__icon.light {
   fill: var(--primary-color-white);
 }
 
