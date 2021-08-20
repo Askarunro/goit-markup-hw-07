@@ -725,7 +725,7 @@ ul {
 
 /* BACKDROP & MODAL */
 
-.backdrop.is-hidden {
+.backdrop.backdrop--hidden {
   opacity: 0;
   visibility: hidden;
 }
@@ -782,7 +782,7 @@ ul {
   fill: var(--accent-color);
 }
 
-.legend {
+.modal__legend {
   display: block;
   font-weight: bold;
   font-size: 20px;
@@ -794,7 +794,13 @@ ul {
   margin-bottom: 12px;
 }
 
-.form-field label {
+/* form-modal */
+
+.form-modal {
+  pointer-events: visible;
+}
+
+.form-modal__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -802,6 +808,23 @@ ul {
   letter-spacing: 0.01em;
   color: #757575;
 }
+
+.form-modal__field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-modal__field:not(:first-child){
+  margin-top: 10px;
+} 
+
+.form-modal__thumb {
+  position: relative;
+  width: 100%;
+}
+
 
 .field {
   width: 100%;
@@ -813,27 +836,7 @@ ul {
   transition: border-color 250ms var(--timing-function);
 }
 
-.form-modal {
-  pointer-events: visible;
-}
-
-.form-field {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.form-field + .form-field {
-  margin-top: 10px;
-} 
-
-.form-field-thumb {
-  position: relative;
-  width: 100%;
-}
-
-.icon-field {
+.field__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -846,7 +849,7 @@ ul {
   border-color: var(--accent-color);
 }
 
-.field:focus-within + .icon-field {
+.field:focus-within + .field__icon {
   fill: var(--accent-color);
 }
 
@@ -863,7 +866,8 @@ ul {
   border-color: var(--accent-color);
 }
 
-.box-contract {
+/* contract */
+.modal__contract {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -871,7 +875,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.box-contract > label {
+.label-checkbox {
   display: flex;
 }
 
@@ -879,7 +883,7 @@ ul {
   display: inline-block;
 }
 
-.input-contract {
+.label-checkbox__input {
   position: absolute;
 
   clip: rect(0 0 0 0);
@@ -893,7 +897,7 @@ ul {
   align-items: center;
 }
 
-.box-checkbox {
+.label-checkbox__check {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -903,7 +907,7 @@ ul {
   cursor: pointer;
 }
 
-.input-contract:checked + .box-checkbox {
+.label-checkbox__input:checked + .label-checkbox__check{
   background-image: url(../images/chekbox-ok.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -912,7 +916,7 @@ ul {
   border: 1px solid var(--accent-color);
 }
 
-.link-contract {
+.label-checkbox__link {
   text-decoration-line: underline;
   line-height: 1.71;
   color: var(--accent-color);

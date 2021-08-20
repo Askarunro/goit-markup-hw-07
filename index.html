@@ -420,53 +420,53 @@
             </div>
         </footer>
         <!-- BACKDROP -->
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop backdrop--hidden" data-modal>
             <div class="modal">
                 <button data-modal-close type="button" class="btn-close btn">
-                    <svg class="icon-close" width="11" height="11">
+                    <svg class="btn-close__icon" width="11" height="11">
                         <use href="./images/sprite.svg#close"></use>
                     </svg>
                 </button>
-                <b class="legend">Оставьте свои данные, мы вам перезвоним</b>
+                <b class="modal__legend">Оставьте свои данные, мы вам перезвоним</b>
                 <form class="form-modal"> 
-                    <div class="form-field">
-                        <label for="inp-name">Имя</label>
-                        <div class="form-field-thumb">
+                    <div class="form-modal__field">
+                        <label for="inp-name" class="form-modal__label">Имя</label>
+                        <div class="form-modal__thumb">
                             <input type="text" name="text" id="inp-name" class="field" required>
-                            <svg class="icon-field" width="18" height="18">
+                            <svg class="field__icon" width="18" height="18">
                                 <use href="./images/sprite.svg#input-name"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="form-field">
-                        <label for="inp-tel">Телефон</label>
-                        <div class="form-field-thumb">
+                    <div class="form-modal__field">
+                        <label for="inp-tel" class="form-modal__label">Телефон</label>
+                        <div class="form-modal__thumb">
                             <input type="tel" name="tel" id="inp-tel" class="field" required>
-                            <svg class="icon-field" width="18" height="18">
+                            <svg class="field__icon" width="18" height="18">
                                 <use href="./images/sprite.svg#input-tel"></use>
                             </svg> 
                         </div>
                     </div>
-                    <div class="form-field">
-                        <label for="inp-mail">Почта</label>
-                        <div class="form-field-thumb">
+                    <div class="form-modal__field">
+                        <label for="inp-mail" class="form-modal__label">Почта</label>
+                        <div class="form-modal__thumb">
                             <input type="email" name="email" id="inp-mail" class="field" required>
-                            <svg class="icon-field" width="18" height="18">
+                            <svg class="field__icon" width="18" height="18">
                                 <use href="./images/sprite.svg#input-mail"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="form-field ">
-                        <label for="comment">Комментарий</label>
+                    <div class="form-modal__field ">
+                        <label for="comment" class="form-modal__label">Комментарий</label>
                         <textarea name="comment" id="comment" class="textarea" rows="7" placeholder="Введите текст"></textarea>
                     </div> 
-                    <div class="box-contract">
+                    <div class="modal__contract">
                         <label for="inp-contract" class="label-checkbox">
-                            <input type="checkbox" name="checkbox-contract" id="inp-contract" class="input-contract">
-                            <span class="box-checkbox"></span>
+                            <input type="checkbox" name="checkbox-contract" id="inp-contract" class="label-checkbox__input">
+                            <span class="label-checkbox__check"></span>
                         </label>
-                        <span class="contract-text">Соглашаюсь с рассылкой и принимаю
-                            <a href="https://uk.wikipedia.org/wiki/Договір" class="link-contract link-style">Условия договора</a>
+                        <span class="label-checkbox__contract">Соглашаюсь с рассылкой и принимаю
+                            <a href="https://uk.wikipedia.org/wiki/Договір" class="label-checkbox__link link-style">Условия договора</a>
                         </span>
                     </div> 
                     <button type="submit" class="btn-submit btn">Отправить</button>
