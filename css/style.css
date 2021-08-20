@@ -156,6 +156,11 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.contact__item{
+  display: inline-flex;
+  align-items: center;
+}
+
 .contact__item:first-child {
   margin-right: 30px;
 }
