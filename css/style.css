@@ -608,14 +608,16 @@ ul {
   padding: 94px 0;
 }
 
-.filter-list {
+.list-filter{
   display: flex;
   justify-content: center;
+}
 
+.section-portfolio__filter{
   margin-bottom: 50px;
 }
 
-.filter-list .item-list:not(:first-child) {
+.list-filter__item:not(:first-child) {
   margin-left: 8px;
 }
 
@@ -647,22 +649,29 @@ ul {
 }
 
 /* по MDN */
-.portfolio-list {
+.list-cadrs {
   display: flex;
   flex-wrap: wrap;
+}
 
+.section-portfolio__cadrs{
   margin: -15px;
 }
 
-.item-portfolio {
+.list-cadrs__item {
   margin: 15px;
   width: calc((100% - 90px) / 3);
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.item-portfolio:hover {
+.list-cadrs__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.box-overlay {
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay-portfolio {
@@ -688,14 +697,10 @@ ul {
   line-height: 1.56;
 }
 
-.link-portfolio:hover .overlay-portfolio {
+.list-cadrs__link:hover .overlay-portfolio {
   transform: translatey(0);
 }
 
-.box-overlay {
-  position: relative;
-  overflow: hidden;
-}
 
 .subtitle-content {
   border: 1px solid #eeeeee;
@@ -703,7 +708,7 @@ ul {
   padding: 20px 24px;
 }
 
-.subtitle-list {
+.list-cadrs__subtitle {
   margin-bottom: 4px;
 
   color: var(--primary-text-color);
@@ -712,7 +717,7 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.description-list {
+.list-cadrs__description {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.9;
