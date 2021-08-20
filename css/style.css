@@ -461,44 +461,43 @@ ul {
   align-items: baseline;
 }
 
-.box-logo-address {
+.footer__address {
   width: 231px;
 }
 
-.box-footer-logo {
+.footer__logo {
   margin-bottom: 20px;
 }
 
-.logo--lighter {
+.bock-logo__link--lighter {
   color: var(--primary-color-white);
 }
 
-.items-addr {
+.list-address {
   font-style: normal;
   line-height: 1.7;
   font-weight: 400;
   letter-spacing: 0.03em;
 }
 
-.item-addr:not(:last-child) {
+.list-address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.location {
+.list-address__item--lighter {
   color: var(--primary-color-white);
 }
 
-.link-cont {
+.list-address__item--darker {
   color: var(--color-contacts);
 }
 
-
-
-.box-join {
+/* ПРИСОЕДИНЯЙТЕСЬ */
+.footer__social {
   margin-left: 70px;
 }
 
-.title-join {
+.block-social__title {
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -507,44 +506,56 @@ ul {
   color: var(--primary-color-white);
 }
 
-.items-join {
-  display: flex;
-}
-
+/* lists-networks-footer */
 .lists-networks__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.lists-networks__link.dark {
+.lists-networks__link--dark {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--timing-function);
 }
 
-.lists-networks__link.dark:hover,
-.lists-networks__link.dark:focus {
+.lists-networks__link--dark:hover,
+.lists-networks__link--dark:focus {
   background-color: var(--accent-color);
 }
 
-.lists-networks__icon.light {
+.lists-networks__icon--light {
   fill: var(--primary-color-white);
 }
 
-.box-sign-up {
+/*ПОДПИШИТЕСЬ НА РАССЫЛКУ*/
+.footer__mailing {
   margin-left: auto;
   width: 570px;
 }
 
-.form-sign-up {
+.form-mailing {
   display: flex;
   flex-wrap: wrap;
 }
 
-.box-input-button {
+.form-mailing__label {
+  margin-bottom: 20px;
+
+  display: block;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.form-mailing__box {
   display: flex;
   justify-content: space-between;
 }
 
-.input-mail {
+.form-mailing__input {
   padding-left: 16px;
   width: 358px;
   height: 50px;
@@ -556,23 +567,11 @@ ul {
   border-radius: 4px;
 }
 
-.text-sign-up {
-  margin-bottom: 20px;
-  display: block;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
-.btn-sing-up {
+.button-mailing {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-left: 12px;
+  
   width: 200px;
   height: 50px;
   padding: 10px 29px;
@@ -583,7 +582,11 @@ ul {
   border-radius: 4px;
 }
 
-.text-submit {
+.form-mailing__button{
+  margin-left: 12px;
+}
+
+.button-mailing__text {
   display: block;
   font-weight: bold;
   font-size: 16px;
@@ -592,7 +595,7 @@ ul {
   color: #ffffff;
 }
 
-.icon-send {
+.button-mailing__icon {
   display: block;
   margin-left: 10px;
 }
