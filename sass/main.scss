@@ -1,12 +1,12 @@
 
 @import'utils/variables';
 @import'utils/mixins';
-@import'base/global-styles';
+
 @import'components/logo';
 @import'components/button';
 
 @import'base/normalize';
-
+@import'base/global-styles';
 @import'layout/studio/header';
 
 
