@@ -1,18 +1,20 @@
 @import'utils/variables';
+@import'components/logo';
+@import'components/button';
 @import'base/normalize';
 @import'base/global-styles';
-@import'layout/header';
+@import'layout/studio/header';
 
-@import'components/logo';
 
-@import'layout/section-hero';
-@import'layout/section-advantages';
-@import'layout/section-work';
+
+@import'layout/studio/section-hero';
+@import'layout/studio/section-advantages';
+@import'layout/studio/section-work';
 @import'components/social-networks';
-@import'layout/section-team';
+@import'layout/studio/section-team';
 
-@import'layout/section-company';
-@import'layout/footer';
+@import'layout/studio/section-company';
+@import'layout/studio/footer';
 @import'components/modal';
 
 

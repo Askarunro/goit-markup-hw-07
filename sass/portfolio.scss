@@ -1,10 +1,11 @@
 @import'utils/variables';
 @import'base/normalize';
 @import'base/global-styles';
-@import'layout/header';
+@import'layout/studio/header';
+@import'components/button';
 
 @import'components/logo';
 @import'layout/portfolio/portfolio';
 @import'components/social-networks';
 
-@import'layout/footer';
+@import'layout/studio/footer';
