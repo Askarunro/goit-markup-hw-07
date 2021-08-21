@@ -1,10 +1,10 @@
 @font-face { 
-  font-family: 'Raleway';
-  src: local('Raleway'),
-       url(/fonts/raleway-v22-latin-700.eot) format("eot"), 
-       url(/fonts/raleway-v22-latin-700.woff) format("woff"), 
-       url(/fonts/raleway-v22-latin-700.woff2) format("woff2"),
-       url(/fonts/raleway-v22-latin-700.ttf) format("truetype");
+  font-family: "Raleway";
+  src: local("Raleway"),
+       url(..//../fonts/raleway-v22-latin-700.eot) format("eot"), 
+       url(..//..fonts/raleway-v22-latin-700.woff) format("woff"), 
+       url(..//..fonts/raleway-v22-latin-700.woff2) format("woff2"),
+       url(..//..fonts/raleway-v22-latin-700.ttf) format("truetype");
   font-weight: bold;
   font-style: italic;
 }
