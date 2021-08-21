@@ -1,6 +1,6 @@
 @font-face { 
-  font-family: "Raleway";
-  src: local("Raleway"),
+  font-family: 'Raleway';
+  src: local('Raleway'),
        url(/fonts/raleway-v22-latin-700.eot) format("eot"), 
        url(/fonts/raleway-v22-latin-700.woff) format("woff"), 
        url(/fonts/raleway-v22-latin-700.woff2) format("woff2"),
@@ -55,7 +55,7 @@
 // family=Raleway:wght@700&
 
   body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: $textColor;
     background-color: $primaryColorWhite;
     font-size: 14px;
