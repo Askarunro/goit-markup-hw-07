@@ -3,8 +3,7 @@
   }
   
   .list-filter{
-    display: flex;
-    justify-content: center;
+    @include centeredFlex();
   }
   
   .section-portfolio__filter{
@@ -73,9 +72,7 @@
     top: 0;
     left: 0;
   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex();
   
     padding: 63px 24px;
   

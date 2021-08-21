@@ -140,9 +140,7 @@
   
   /* contract */
   .modal__contract {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex();
     margin-top: 20px;
     margin-bottom: 30px;
   }

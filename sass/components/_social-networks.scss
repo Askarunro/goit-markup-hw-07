@@ -9,12 +9,10 @@
 }
   
   .lists-networks__link {
-    display: inline-flex;
+    @include centeredFlex(inline-flex);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
   
     transition: background-color 250ms $timingFunction;
 

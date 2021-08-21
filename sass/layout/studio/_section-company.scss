@@ -3,19 +3,18 @@
   }
   
   .list-company {
-    display: flex;
-    justify-content: space-between;
+    @include centeredFlex(flex, space-between);
   }
   
   .list-company__link {
-    display: flex;
+    @include centeredFlex();
+
     border: 1px solid #afb1b8;
     box-sizing: border-box;
     border-radius: 4px;
     width: 170px;
     height: 92px;
-    justify-content: center;
-    align-items: center;
+
   
     transition: border-color 250ms $timingFunction;
 

@@ -13,19 +13,15 @@
   
   .block-work {
     position: relative;
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+    @include centeredFlex(flex, space-between);
   }
   
   .block-work__label {
     position: absolute;
     bottom: 0px;
   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex();
   
     width: 370px;
     height: 70px;

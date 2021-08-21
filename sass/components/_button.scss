@@ -6,10 +6,7 @@
     border: none;
     border-radius: 4px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    @include centeredFlex();
     margin-left: auto;
     margin-right: auto;
 
@@ -23,7 +20,7 @@
     letter-spacing: 0.06em;
     cursor: pointer;
 
-    transition: background-color 250ms $timingFunction;
+    transition: background-color 2500ms $timingFunction;
 
       &:hover,
       &:focus {
