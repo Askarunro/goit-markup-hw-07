@@ -1,0 +1,38 @@
+.company {
+    padding: 94px 0;
+  }
+  
+  .list-company {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .list-company__link {
+    display: flex;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+  
+    transition: border-color 250ms $timingFunction;
+  }
+  
+  .list-company__icon {
+    fill: #afb1b8;
+    transition: fill 250ms $timingFunction;
+  }
+  
+  .list-company__link:hover,
+  .list-company__link:focus {
+    border-color: $accentColor;
+    outline: $accentColor;
+  }
+  
+  .list-company__link:hover .list-company__icon,
+  .list-company__link:focus .list-company__icon {
+    fill: $accentColor;
+  }
+  
