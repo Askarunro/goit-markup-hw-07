@@ -1,17 +1,25 @@
 .btn {
-    // padding: 10px 32px;
+
     width: 200px;
     height: 50px;
   
     border: none;
     border-radius: 4px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
     background-color: $accentColor;
     color: $primaryColorWhite;
   
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
 
@@ -21,59 +29,4 @@
       &:focus {
         background-color: #188ce8;
       }
-  }
-
-.button-hero {
-    padding: 0;
-  
-    border: none;
-    border-radius: 4px;
-    
-    background-color: $accentColor;
-    color: $primaryColorWhite;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-
-    transition: background-color 250ms $timingFunction;
-
-      &:hover,
-      &:focus {
-        background-color: #188ce8;
-      }
-  }
-
-
-  .button-mailing {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    background-color: $accentColor;
-    color: $primaryColorWhite;
-
-    width: 200px;
-    height: 50px;
-    padding: 10px 29px;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: 0px;
-    border-radius: 4px;
-  }
-
-
-  .btn-submit {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-    padding: 10px 55px;
-
-    background-color: $accentColor;
-    color: $primaryColorWhite;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
-    border-radius: 4px;
   }
