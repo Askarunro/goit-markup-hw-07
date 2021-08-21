@@ -40,9 +40,10 @@
     color: $primaryColorWhite;
   
     transition: background-color 250ms $timingFunction;
+
+      &:hover,
+      &:focus {
+        background-color: #188ce8;
+      }
   }
   
-  .button-hero:hover,
-  .button-hero:focus {
-    background-color: #188ce8;
-  }

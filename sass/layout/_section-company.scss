@@ -18,21 +18,25 @@
     align-items: center;
   
     transition: border-color 250ms $timingFunction;
+
+      &:hover,
+      &:focus {
+      border-color: $accentColor;
+      outline: $accentColor;
+    }
   }
   
   .list-company__icon {
     fill: #afb1b8;
     transition: fill 250ms $timingFunction;
+
+      .list-company__link:hover &,
+      .list-company__link:focus &{
+        fill: $accentColor;
+      }
   }
   
-  .list-company__link:hover,
-  .list-company__link:focus {
-    border-color: $accentColor;
-    outline: $accentColor;
-  }
   
-  .list-company__link:hover .list-company__icon,
-  .list-company__link:focus .list-company__icon {
-    fill: $accentColor;
-  }
+  
+ 
   

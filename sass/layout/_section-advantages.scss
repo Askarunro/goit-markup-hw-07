@@ -11,11 +11,13 @@
   
   .list-advantages__item {
     max-width: 270px;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
   }
   
-  .list-advantages__item:not(:first-child) {
-    margin-left: 30px;
-  }
+ 
   
   .list-advantages__box {
     display: flex;
